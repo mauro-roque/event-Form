@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Event Form</title>
+</head>
+<body>
+    <div class="black"></div>
+    <header>
+            <h1>Crie e compartilhe<br>
+                seu evento.</h1>
+            <p>O primeiro passo, é preencher esse<br>
+                formulário de inscrição.</p>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <div class="titulo"><!--div do titulo-->
+                    <legend>Informações do Evento</legend>
+                </div>
+                <div class="borda"></div>
+                <!--Daqui para baixo começa as box da primeira parte-->
+                <div>
+                    <label for="titulo">Título do evento<span>(mínimo 8 caracteres)</span></label>
+                    <input class="item_padrao" type="text" name="" id="titulo">
+                </div>
+                <div>
+                    <label for="evento_link">Link do evento<span>(comece com https://)</span></label>
+                    <input class="item_padrao" type="url" name="" id="evento_link">
+                </div>
+                <div>
+                    <label for="whats">Whatsapp para contato<span>(somente números)</span></label>
+                    <input class="item_padrao" type="number" name="" id="whats">
+                </div>
+                <div>
+                    <label for="info_extra">Informações  extras</label>
+                    <textarea name="" id="info_extra"></textarea>
+                </div>
+                <div>
+                    <label for="categoria">Categoria</label>
+                    <select class="item_padrao" name="" id="categoria">
+                        <option value="Baile">Baile</option>
+                        <option value="Rave">Rave</option>
+                        <option value="Festival">Festival</option>
+                    </select>
+                </div>
+                <!--Final da primeira parte-->
+                <div class="titulo titulo_dois">
+                    <legend>Privacidade</legend>
+                </div>
+                <div class="borda"></div>
+                <!--Daqui para baixo começa as box da segunda parte-->
+                <div>
+                    <label for="email_pro">E-mail do administrador<span>(digite um email válido)</span></label>
+                    <input class="item_padrao" type="email" name="" id="email_pro">
+                </div>
+                <div>
+                    <label for="senha">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
+                    <input class="item_padrao" type="password" name="" id="senha">
+                </div>
+                <div class="container_checkbox">
+                    <input class="item_checkbox" type="checkbox" name="" id="event_privado">
+                    <label class="item_labelcheck" for="event_privado">Evento privado</label>
+                </div>
+                <!--Final da segunda parte-->
+                <div class="titulo">
+                    <legend>Dia e hora</legend>
+                </div>
+                <div class="borda19px"></div>
+                <!--Daqui para baixo começa as box da segunda parte-->
+                <section class="section_date">
+                    <div>
+                        <label class="label_date_todos3" for="data">Data</label>
+                        <input class="item_maior_date" type="date" name="" id="data">
+                    </div>
+                    <div>
+                        <label class="label_date_todos3" for="comeco">Das</label>
+                        <input class="item_menor_date" type="time" name="" id="comeco">
+                    </div>
+                    <div>
+                        <label class="label_date_todos3" for="fim">Até</label>
+                        <input class="item_menor_date" type="time" name="" id="fim">
+                    </div>
+                </section>
+            </fieldset> 
+        </form>
+    </main>
+    <footer class="container_botao">
+        <button class="item_botao">Salvar evento</button>
+    </footer>
+</body>
+</html>
